@@ -409,3 +409,20 @@
   display: table;
   clear: both;
 }
+
+/*************************************************** */
+/*   styling for the menu                                                        */
+/*************************************************** */
+/* line 16, ../sass/sw-header-menu-styles.sass */
+.sw-navigation-menu {
+  position: relative;
+  border: 1px solid black;
+  overflow: visible;
+  height: 0px;
+}
+
+/* line 22, ../sass/sw-header-menu-styles.sass */
+.sw-navigation-menu ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}

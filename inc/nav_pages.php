@@ -5,8 +5,11 @@
 *
 */
 ?><nav class="sw-navigation-menu">
-<?php
-$args = array() ;
+<ul><?php
+$args = array(
+    'post_type'    => 'page',
+    'title_li'             => '', 
+) ;
 wp_list_pages($args) ;
-?></nav>
+?></nav></ul>
 <?php return  ; ?>
