@@ -7,6 +7,10 @@ jQuery(document).ready(function($) {
 	
 	window.swHeader = {
 
+	    state : {
+		menuShowing : false
+	    },
+	    
 	    els : {
 		nav : $(".sw-navigation-menu ul"),
 		button : $(".sw-showhide")
