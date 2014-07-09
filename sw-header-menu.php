@@ -26,7 +26,9 @@ add_action('wp_enqueue_scripts',  'sw_header_menu_styles');
 /* load scripts */
 function sw_header_menu_scripts()
 {
-    wp_enqueue_script(  'sw-header-menu-scripts', SWHEADERMENU_URL . "/js/swHeaderMenuBehaviours.js",  array('jquery')    );
+       wp_enqueue_script(  'velocity', SWHEADERMENU_URL . "/js/jquery.velocity.min.js",  array('jquery')    );
+    wp_enqueue_script(  'sw-header-menu-scripts', SWHEADERMENU_URL . "/js/swHeaderMenuBehaviours.js",  array('jquery', 'velocity')    );
+    
 }
 add_action('wp_enqueue_scripts', 'sw_header_menu_scripts' );
 

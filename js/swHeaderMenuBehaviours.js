@@ -1,27 +1,32 @@
 jQuery(document).ready(function() {
 
-   (function() {
+    (function() {
 
-       window.swHeader = {
+        window.swHeader = {
 
-	   data : {
-	       
-	   },  // ends data
+            vars : {
+                nav  :  jQuery(".sw-navigation-menu ul"),
+                button  :  jQuery(".sw-showhide")
 
-	   functions : {
+            },  // ends data
 
-	       
-	   },  // ends functions
+            functions  :  {
+                getListHeight : function() {
+                    return jQuery(".sw-navigation-menu ul").css("height") ;
+                } ,
 
-	   init : function() {
-	       console.debug("got to init") ;
-	   } // ends init
-	   
-       } ;
-       
-       window.swHeader.init() ;
-       
+            },  // ends functions
+
+
+            init  :  function() {
+
+            } // ends init
+
+        } ;
+
+        window.swHeader.init() ;
+
     })();  // end of our module
 
-    
+
 });
