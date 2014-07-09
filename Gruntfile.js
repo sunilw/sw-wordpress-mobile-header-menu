@@ -28,6 +28,7 @@ module.exports = function (grunt){
 
     });  // end task defintions
 
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-watch');    
     grunt.loadNpmTasks('grunt-contrib-compass');   
