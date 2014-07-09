@@ -5,6 +5,7 @@ var showHide = require("./showHide") ;
 jQuery(document).ready(function($) {
 
     (function() {
+	
 	window.swHeader = {
 
 	    els : {
@@ -14,9 +15,9 @@ jQuery(document).ready(function($) {
 
 	    functions : {	
 		toggleMenu : function(e) {
-		    	console.debug("got to toggleMenu") ;
-		    $(".sw-showhide").on("click", function() {
-			console.debug("clicked on toggleMenu") ;
+		    $(".sw-showhide").on("click", function(e) {
+			e.preventDefault() ;
+			showHide() ;
 		    }) ;
 		}
 	    }	    
@@ -34,8 +35,7 @@ jQuery(document).ready(function($) {
 /* show and hide the menu  */
 
 module.exports = function() {
-
-    console.debug("hello from showHide") ;
+    var menu = window.swHeader.els.nav ;
     
 }
 
