@@ -10,9 +10,19 @@ module.exports = function (grunt){
             }
         },  // ends compass task definitions
 
+	browserify : {
+	    options  :  {		
+	    },
+	    dev  :  {
+		files : {
+		    'js/swHeaderMenuBehaviours.js': ['js/app.js'],
+		}
+	    }
+	},  // ends browserify task definition
+		
 	watch : {
             files : ['*.html',  '*.php',  'js/*', 'sass/*', 'css/*'],
-            tasks : ['compass'],
+            tasks : ['browserify', 'compass'],
             options : {
                 livereload: true
             }
